@@ -1,0 +1,37 @@
+[{
+    "name":"Yaldey-Shaiy",
+    "author":"M. Fucs",
+    "UnitsInStock":5,
+    "Audience":"youth",
+    "code":123
+},
+{
+    "name":"Ethalech",
+    "author":"A. Margalit",
+    "UnitsInStock":7,
+    "Audience":"adults",
+    "code":456  
+},
+{
+    "name":"komicSaba",
+    "author":"M. Safra",
+    "UnitsInStock":15,
+    "Audience":"kids",
+    "code":789    
+},
+{
+    "name":"Isterac",
+    "author":"M. Keinan",
+    "UnitsInStock":3,
+    "Audience":"youth",
+    "code":9658    
+},
+{
+    "name":"Dady-Gamady",
+    "author":"M. Fucs",
+    "UnitsInStock":9,
+    "Audience":"kids",
+    "code":4580 
+      
+}
+]

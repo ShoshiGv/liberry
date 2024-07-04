@@ -1,0 +1,76 @@
+body {
+    text-align: right;
+}
+
+.table {
+    margin: 0%;
+}
+
+#take,
+#return {
+    display: none;
+}
+
+#name,
+#author,
+#Audience,
+#code,
+#UnitsInStock,
+#ishur_add,
+#ishur_delete,
+#ishur_search,
+#signin {
+    display: none;
+}
+
+.first_buttons,
+.second_buttons {
+    display: flex;
+    flex-direction: row;
+    float: right;
+
+
+}
+
+.button {
+    background-color: aquamarine;
+    direction: rtl;
+}
+
+#libery {
+    display: none;
+}
+
+.signin,
+.login {
+    margin-top: 30%;
+    background-color: bisque;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#moov_to_signin_button,
+#moov_to_login_button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.login_inputs,
+.signin_inputs {
+    text-align: right;
+    font-size: 20px;
+}
+
+#in {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}

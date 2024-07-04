@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libery.css">
+    <!-- <script src="scripts/jquery-3.5.1.min.js"></script> -->
+    <script src="libery.js"></script>
+    <script src="login.js"></script>
+    <script src="books.json"></script>
+
+</head>
+
+<body>
+    <form onsubmit="log_in(event)">
+    <div class="login" id="login">
+        <h1 id="cnisa">כניסה</h1>
+        <button type="submit" id="moov_to_signin_button" onclick="moov_to_signin()"> פעם ראשונה אצלינו-לחץ כאן</button>
+        <input id="login_name1" class="login_inputs" placeholder="שם" required  maxlength="15" type="text"
+            style="margin: 10px;" > 
+
+        <input id="login_sisma1" class="login_inputs" placeholder=" סיסמה" required  maxlength="15" type="password"
+            style="margin: 10px;" >
+        <button type="submit"  id="login_button"> כניסה</button>
+    </div>
+</form>
+<form onsubmit="sign_in(event)">
+    <div class="signin" id="signin">
+        <h1 id="harshama">הרשמה</h1>
+        <button type="submit" id="moov_to_login_button" onclick="moov_to_login()"> כבר ביקרת אצלינו -לחץ כאן</button>
+        <input id="signin_name" class="signin_inputs" placeholder=" שם"  required maxlength="15" type="text"
+            style="margin: 10px;" >
+        <input id="signin_email" class="signin_inputs" placeholder="מייל"  required maxlength="15" type="email"
+            style="margin: 10px;" >
+        <input id="signin_sisma" class="signin_inputs" placeholder="סיסמה"  required maxlength="15" type="password"
+            style="margin: 10px;" >
+        <button type="submit"  id="signin_button" > הרשמה וכניסה</button>
+    </div>
+</form>
+
+
+
+
+
+
+
+    <div class="libery" id="libery">
+        <button id="back" onclick="moov_to_login()">back</button>
+        <h1>להשאלה או החזרת ספר הכניסו את קוד הספר</h1>
+        <input id="insert" required maxlength="15" type="text" style="margin: 10px;">
+        <input type="submit" value="enter" id="insert1" onclick="enter()">
+        <br>
+        <div class="first_buttons">
+            <button class="button" id="take" onclick="take_book()">השאלת הספר</button>
+            <button class="button" id="return" onclick="return_book()">החזרת הספר</button>
+        </div>
+        <br>
+        <h2>או הקישו על הפעולה הרצויה</h2>
+        <br>
+        <input type="submit" value="הוספת\הסרת ספר" id="add_delete" onclick="add_delete()">
+        <button id="search1" onclick="search_inputs()">חיפוש הספר במלאי</button>
+        <br>
+        <!-- <form> -->
+        <div class="down">
+            <div id="in">
+                <input id="name" class="in" placeholder="name"  required maxlength="15" type="text"
+                    style="margin: 10px;" name="name">
+                <input id="author" class="in" placeholder="author"  required maxlength="15" type="text"
+                    style="margin: 10px;" name="author">
+                <input id="UnitsInStock" class="in" placeholder="amount"  required maxlength="15" type="text"
+                    style="margin: 10px;" name="UnitsInStock">
+                <input id="Audience" class="in" placeholder="Audience" required maxlength="15" type="text" style="margin: 10px;" name="Audience">
+                    <!-- <option value="kids">kids</option>
+                    <option value="adults">adults</option>
+                    <option value="youth">youth</option>
+                </select> -->
+                <input id="code" class="in" placeholder="code" required maxlength="15" type="text"
+                    style="margin: 10px;" name="code">
+            </div>
+            <div class="second_buttons">
+                <button class="button" type="submit" id="ishur_search" onclick="search()"> חיפוש הספר</button>
+                <button class="button" type="submit" id="ishur_add" onclick="ishur_add1()"> הוספת הספר</button>
+                <button class="button" type="submit" id="ishur_delete" onclick="ishur_delete1()"> הסרת הספר</button>
+            </div>
+        </div>
+        <!-- </form>  -->
+
+
+        <!-- <button class="button"  id="add" onclick="add_book()">הוספת ספר</button>
+    <button class="button" id="delete1" onclick="delete_book()">הסרת ספר</button>   -->
+
+
+
+        <div id="table"> </div>
+    </div>
+</body>
+
+</html>
